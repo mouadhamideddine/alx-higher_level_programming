@@ -9,6 +9,6 @@ if __name__ == "__main__":
     elif (argv_len > 2):
         count = 1
         print(f'{argv_len - 1} arguments:')
-        while(count != argv_len):
+        while (count != argv_len):
             print(f'{count}: {sys.argv[count]}')
             count += 1
