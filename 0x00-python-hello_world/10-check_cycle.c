@@ -8,7 +8,7 @@ int traverse_check(listint_t *head)
 {
 	listint_t *current = head;
 
-	while (current)
+	while (current == NULL)
 	{
 		current = current->next;
 		if (current == head)
