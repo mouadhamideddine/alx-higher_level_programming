@@ -27,7 +27,6 @@ int check_cycle(listint_t *list)
 {
 	if (!list)
 	{
-		printf("NULL LIST");
 		return (0);
 	}
 	return (traverse_check(list));
