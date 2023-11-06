@@ -20,12 +20,11 @@ def print_matrix_integer(matrix=[[]]):
         print()
         return
     for _list in matrix:
-        if _list:
-            print_list(_list)
+        print_list(_list)
     return
 
 
-
+'''
 matrix = [
             [1, 2, 3,5],
                 [4, 5, 6],
@@ -35,4 +34,4 @@ matrix = [
 print_matrix_integer(matrix)
 print("--")
 print_matrix_integer()
-
+'''
