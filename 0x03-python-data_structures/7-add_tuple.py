@@ -4,8 +4,8 @@ def pair_tuple(_tuple):
         return (0, 0)
     if len(_tuple) == 1:
         return (_tuple[0], 0)
-    if len(_tuple) > 2 :
-        return (_tuple[0],_tuple[1])
+    if len(_tuple) > 2:
+        return (_tuple[0], _tuple[1])
     return _tuple
 
 
