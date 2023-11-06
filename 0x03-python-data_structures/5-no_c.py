@@ -6,7 +6,6 @@ def no_c(my_string):
     for character in my_string:
         if character != 'c' and character != 'C':
             str_copy += character
-    my_string = str_copy
-    return my_string
+    return str_copy
 # strin = ""
 # print(no_c("Best School"))
