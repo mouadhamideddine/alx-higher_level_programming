@@ -8,11 +8,5 @@ def no_c(my_string):
             str_copy += character
     my_string = str_copy
     return my_string
-
-
 # strin = ""
 # print(no_c("Best School"))
-# print(no_c("Chicago"))
-# print(no_c("C is fun!"))
-# print(no_c(strin))
-# print(strin)
