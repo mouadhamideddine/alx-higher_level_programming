@@ -2,6 +2,7 @@
 
 def print_list(_list):
     if not _list:
+        print(_list)
         return
     length = len(_list)
     count = 0
@@ -14,11 +15,12 @@ def print_list(_list):
     return
 
 
-
 def print_matrix_integer(matrix=[[]]):
     for _list in matrix:
         print_list(_list)
     return
+
+
 '''
 matrix = [
             [1, 2, 3,5],
