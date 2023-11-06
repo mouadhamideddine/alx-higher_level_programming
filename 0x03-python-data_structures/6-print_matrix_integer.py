@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 
 def print_list(_list):
-    if not _list:
-        print(_list)
-        return
     length = len(_list)
     count = 0
     for element in _list:
@@ -16,8 +13,11 @@ def print_list(_list):
 
 
 def print_matrix_integer(matrix=[[]]):
+    if not matrix:
+        return
     for _list in matrix:
-        print_list(_list)
+        if _list:
+            print_list(_list)
     return
 
 
