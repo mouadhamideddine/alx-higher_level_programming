@@ -16,5 +16,3 @@ def no_c(my_string):
 # print(no_c("C is fun!"))
 # print(no_c(strin))
 # print(strin)
-
-#'''
