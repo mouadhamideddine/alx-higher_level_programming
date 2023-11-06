@@ -3,6 +3,9 @@
 def print_list(_list):
     length = len(_list)
     count = 0
+    if not _list:
+        print()
+        return
     for element in _list:
         count += 1
         if count == length:
@@ -14,6 +17,7 @@ def print_list(_list):
 
 def print_matrix_integer(matrix=[[]]):
     if not matrix:
+        print()
         return
     for _list in matrix:
         if _list:
@@ -21,7 +25,7 @@ def print_matrix_integer(matrix=[[]]):
     return
 
 
-'''
+
 matrix = [
             [1, 2, 3,5],
                 [4, 5, 6],
@@ -31,4 +35,4 @@ matrix = [
 print_matrix_integer(matrix)
 print("--")
 print_matrix_integer()
-'''
+
