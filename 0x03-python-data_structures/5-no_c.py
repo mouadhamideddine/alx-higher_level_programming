@@ -1,11 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/env pythion3
+
 def no_c(my_string):
     new_string = ""
     for elements in my_string:
         if elements != "c" and elements != "C":
             new_string += elements
     return new_string
-
-# print(no_c("Best School"))
-# print(no_c("Chicago"))
-# print(no_c("C is fun!"))
