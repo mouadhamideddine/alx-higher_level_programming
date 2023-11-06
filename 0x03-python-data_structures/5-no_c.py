@@ -5,6 +5,7 @@ def no_c(my_string):
         if char != 'c' and char != 'C':
             str_copy += char
     return str_copy
-# strin = ""
-# print(no_c("Best School"))
 
+# print(no_c("Best School"))
+# print(no_c("Chicago"))
+# print(no_c("C is fun!"))
