@@ -7,3 +7,4 @@ def no_c(my_string):
     return str_copy
 # strin = ""
 # print(no_c("Best School"))
+
