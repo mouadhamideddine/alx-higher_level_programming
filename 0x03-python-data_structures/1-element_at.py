@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def element_at(my_list, idx):
-    count = -1;# -1 because idx starts from 0
+    count = -1   # -1 because idx starts from 0
     if idx < 0:
         return (None)
     for element in my_list:
