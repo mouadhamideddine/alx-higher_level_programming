@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 square = lambda x: x ** 2
 def square_matrix_simple(matrix=[]):
+    if not matrix:
+        return matrix
     squared_nums = []
     matrix_iter = matrix[:]
     for _list in matrix_iter:
