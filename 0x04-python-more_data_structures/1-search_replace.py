@@ -6,6 +6,8 @@ def search_replace(my_list, search, replace):
     @replace: word to replace with
     return: list
     """
+    if not my_list:
+        return my_list
     list_cpy = my_list[:]
     index = 0
     for element in list_cpy:
