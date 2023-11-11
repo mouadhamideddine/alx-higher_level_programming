@@ -15,4 +15,4 @@ def search_replace(my_list, search, replace):
             list_cpy[index] = replace
             return list_cpy
         index += 1
-    return list_cpy
+    return my_list
