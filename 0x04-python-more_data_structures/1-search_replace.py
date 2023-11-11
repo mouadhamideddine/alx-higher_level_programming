@@ -7,7 +7,7 @@ def search_replace(my_list, search, replace):
     return: list
     """
     if not my_list:
-        return my_list
+        return None
     list_cpy = my_list[:]
     index = 0
     for element in list_cpy:
@@ -15,4 +15,4 @@ def search_replace(my_list, search, replace):
             list_cpy[index] = replace
             return list_cpy
         index += 1
-    return my_list
+    return None
