@@ -11,6 +11,7 @@ def square_matrix_simple(matrix=[]):
             squared_nums.append(result)
     return squared_nums
 
+
 '''
 matrix = []
 
