@@ -1,19 +1,31 @@
 #!/usr/bin/python3
-def _conditions(num, _list=[]):
-    reversed_num = num[::-1]
-    if num in _list or reversed_num in _list or num[0] == num[1]:
+def print_zero_to_ten():
+    token = True
+    for num in range(0, 10):
+        num = str(num).zfill(2)
+        if token:
+            print("{}".format(num), end="")
+            token = False
+        if not token:
+            print(", {}".format(num), end="")
+
+
+def conditions(number):
+    if number[0] == number[1]:
+        return False
+    reversed_num = number[::-1]
+    if int(number) > int(reversed_num):
         return False
     return True
-def print_comb():
-    used_numbers = []
-    token = True
-    for n in range(0,100):
-        n = str(n).zfill(2)
-        if _conditions(n, used_numbers):
-            used_numbers.append(n)
-            if not token: print(", {}".format(n), end="")
-            if token:
-                print("{}".format(n), end="")
-                token = False
+
+
+def print_comb_2():
+    print_zero_to_ten()
+    for num in range(10, 100):
+        num = str(num)
+        if conditions(num):
+            print(", {}".format(num), end="")
     print()
-print_comb()
+
+
+print_comb_2()
