@@ -9,7 +9,7 @@ def uppercase(str):
             str_list[str_index] = chr(ascii_char)
         str_index += 1
     str_list = ''.join(str_list)
-    print(str_list)
+    print("{}".format(str_list))
 
 
 '''
