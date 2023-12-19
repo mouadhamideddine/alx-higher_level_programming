@@ -7,7 +7,7 @@ class Square:
         """
         Init a Square with a given size
 
-        Parametrs:
-        - size : length of size of the square
+        Args:
+            size: length of size of the square
         """
         self.__size = size
