@@ -38,3 +38,14 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
+
+    def my_print(self):
+        """
+        prints the square
+        """
+        if self.__size == 0:
+            print()
+        for lines in range(self.__size):
+            for hashtags in range(self.__size):
+                print("#", end="")
+            print()
