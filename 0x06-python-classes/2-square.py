@@ -8,7 +8,7 @@ class Square:
         """Constructor
         size - size of the square class
         """
-        if size is int:
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
