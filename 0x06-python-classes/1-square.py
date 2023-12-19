@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""this adds Private instance attribute: size to Square class"""
+"""Square class"""
 
 
 class Square:
+    """define a square"""
     def __init__(self, size):
         """Constructor.
         Args:
