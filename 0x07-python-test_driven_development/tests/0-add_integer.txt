@@ -1,15 +1,25 @@
-# Test Case 1
-Input: 4, 3
-Expected Output: 7
+# tests/0-add_integer.txt
+"""
+Test cases for add_integer function
+"""
 
-# Test Case 2
-Input: 5.5, 3.1
-Expected Output: 8
+# Test case 1
+>>> add_integer(4, 3)
+7
 
-# Test Case 3
-Input: "string", 3
-Expected Output: TypeError: a must be an integer
+# Test case 2
+>>> add_integer(5.5, 3.1)
+8
 
-# Test Case 4
-Input: 4, "string"
-Expected Output: TypeError: b must be an integer
+# Test case 3
+>>> add_integer("string", 3)
+Traceback (most recent call last):
+...
+TypeError: a must be an integere
+
+# Test case 4
+>>> add_integer(4, "string")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+"""
