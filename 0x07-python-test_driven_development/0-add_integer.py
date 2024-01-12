@@ -13,7 +13,7 @@ def add_integer(a, b=98):
     >>> add_integer(4, "string")
     Traceback (most recent call last):
     ...
-    TypeError: b must be an integer
+    TypeError: b must be an integere
     """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
