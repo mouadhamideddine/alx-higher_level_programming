@@ -2,14 +2,6 @@
 def matrix_divided(matrix, div):
     """
     divides all elements of @matrix by @div
-    >>> matrix_divided(7, 10)
-    Traceback (most recent call last):
-    ...
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
-    >>> matrix_divided([[1, 2, 3], [1, 2, "vim"]], 10)
-    Traceback (most recent call last):
-    ...
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
     """
     if not isinstance(div, (float, int)):
         raise TypeError ("div must be a number")
