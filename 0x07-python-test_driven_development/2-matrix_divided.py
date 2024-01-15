@@ -6,7 +6,7 @@ def matrix_divided(matrix, div):
     if not isinstance(div, (float, int)):
         raise TypeError ("div must be a number")
     if div == 0:
-        raise TypeError ("division by zero")
+        raise ZeroDivisionError ("division by zero")
     if not isinstance(matrix, list):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     if isinstance(matrix[0], list):
