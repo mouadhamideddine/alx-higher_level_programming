@@ -1,0 +1,11 @@
+#2-matrix_divided.txt
+"""
+>>> matrix_divided(7, 10)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+>>> matrix_divided([[1, 2, 3], [1, 2, "vim"]], 10)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+"""
