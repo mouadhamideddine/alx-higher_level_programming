@@ -1,15 +1,4 @@
 #/usr/bin/python3
-def check_rows_contents(_list):
-    """
-    checks if all elements in list are int or float
-    >>> check_rows_contents([[1, 2, 3], [1, 2, "vim"]])
-    Traceback (most recent call last):
-    ...
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
-    """
-    for number in _list:
-        if not isinstance(number, (int, float)):
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 def matrix_divided(matrix, div):
     """
     divides all elements of @matrix by @div
@@ -35,9 +24,10 @@ def matrix_divided(matrix, div):
             raise TypeError ("matrix must be a matrix (list of lists) of integers/floats")
         if length != len(row):
             raise TypeError ("Each row of the matrix must have the same size")
-        check_rows_contents(row)
+        for number in row:
+            if not isinstance(number, (int, float)):
+                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     new_matrix = []
-
     for i in range(len(matrix)):
         new_row = []
         for j in range(len(matrix[i])):
@@ -46,3 +36,6 @@ def matrix_divided(matrix, div):
     return new_matrix
 
 
+if __name__ == "__main__":
+    import doctest
+    doctest.testfile("tests/2-matrix_divided.txt")
