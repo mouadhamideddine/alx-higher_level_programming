@@ -1,8 +1,11 @@
 #/usr/bin/python3
-#2-matrix_divided.py
 def check_rows_contents(_list):
     """
     checks if all elements in list are int or float
+    >>> check_rows_contents([[1, 2, 3], [1, 2, "vim"]])
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
     """
     for number in _list:
         if not isinstance(number, (int, float)):
