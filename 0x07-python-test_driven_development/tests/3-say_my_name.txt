@@ -17,11 +17,17 @@ Traceback (most recent call last):
 ...
 TypeError: first_name must be a string
 
-#not string
+#first_name not string
 >>> say_my_name(7, "eleven")
 Traceback (most recent call last):
 ...
 TypeError: first_name must be a string
+
+#last_name not string
+>>> say_my_name("seven", 11)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
 
 #numbers string
 >>> say_my_name ("7", "11")
