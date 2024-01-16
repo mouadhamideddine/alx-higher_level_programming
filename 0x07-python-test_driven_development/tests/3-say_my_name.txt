@@ -9,7 +9,7 @@ My name is Mouad Hamideddine
 
 #empty last_name
 >>> say_my_name("Mouad")
-My name is Mouad
+My name is Mouad 
 
 #empty first_name
 >>> say_my_name("")
