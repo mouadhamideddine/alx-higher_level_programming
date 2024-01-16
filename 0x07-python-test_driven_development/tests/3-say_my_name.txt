@@ -1,0 +1,28 @@
+tests for ""3-say_my_name.py" module
+testing "say_my_name" function
+#import function from module
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+#normal strings
+>>> say_my_name("Mouad", "Hamideddine")
+My name is Mouad Hamideddine
+
+#empty last_name
+>>> say_my_name("Mouad")
+My name is Mouad
+
+#empty first_name
+>>> say_my_name("")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+#not string
+>>> say_my_name(7, "eleven")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+#numbers string
+>>> say_my_name ("7", "11")
+My name is 7 11
