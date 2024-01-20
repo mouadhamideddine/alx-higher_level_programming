@@ -1,0 +1,40 @@
+"""
+tests for 5-text_indentation module
+"""
+
+import functions from module:
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+	>>> whitespace_skip_index = __import__('5-text_indentation').whitespace_skip_index
+	>>> read = __import__('5-text_indentation').read
+
+test read function:
+	>>> print(read("."))
+	True
+	>>> print(read(":"))
+	True
+	>>> print(read("hi there."))
+	False
+
+test whitespace_skip_index():
+	>>> print(whitespace_skip_index("    molosse"))
+	4
+	>>> print(whitespace_skip_index(""))
+	0
+	>>> print(whitespace_skip_index("molosse"))
+	0
+
+test text_indentation():
+	>>> text_indentation("hi, there how are you")
+	hi, there how are you
+	>>> text_indentation("Utrum igitur tibi litteram videor an totas paginas commovere?  ")
+	Utrum igitur tibi litteram videor an totas paginas commovere?
+	<BLANKLINE>
+	<BLANKLINE>
+	>>> text_indentation("Utrum igitur tibi litteram videor an totas paginas commovere?         chafchofa.     kachofa")
+	Utrum igitur tibi litteram videor an totas paginas commovere?
+	<BLANKLINE>
+	<BLANKLINE>
+	chafchofa.
+	<BLANKLINE>
+	<BLANKLINE>
+	kachofa
