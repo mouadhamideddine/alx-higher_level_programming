@@ -24,8 +24,18 @@ test whitespace_skip_index():
 	0
 
 test text_indentation():
+	>>> text_indentation(444)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
 	>>> text_indentation("hi, there how are you")
 	hi, there how are you
+	>>> text_indentation("")
+	>>> text_indentation("444:    4444 ")
+	444:
+	<BLANKLINE>
+	<BLANKLINE>
+	4444 
 	>>> text_indentation("Utrum igitur tibi litteram videor an totas paginas commovere?  ")
 	Utrum igitur tibi litteram videor an totas paginas commovere?
 	<BLANKLINE>
