@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
-""" Real definition of a Rectangle """
+""" Area and perimeter """
 
 
 class Rectangle:
     """
-    Real definition of a Rectangle
+    definition of a Rectangle
     """
     def __init__(self, width=0, height=0):
         """initializer"""
@@ -38,3 +38,13 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def area(self):
+        """returns area of rectangle"""
+        return self.height * self.width
+
+    def perimeter(self):
+        """returns perimeter of rectangle"""
+        if self.height == 0 or self.width == 0:
+            return 0
+        return (self.height + self.width) * 2
