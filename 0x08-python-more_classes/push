@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# add
+git add .
+
+# check if a commit message is provided as an argument
+if [ -z "$1" ]; then
+    read -p "Enter commit message: " message
+else
+    message="$1"
+fi
+
+# commit the changes with the commit message
+git commit -m "$message"
+
+# push the changes
+git push
