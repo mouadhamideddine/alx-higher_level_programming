@@ -22,7 +22,7 @@ class Rectangle:
         """representation for internal use
         capable of creating a new object if eval"""
         return f"Rectangle({self.width}, {self.height})"
-    
+
     def __del__(self):
         print("Bye rectangle...")
 
