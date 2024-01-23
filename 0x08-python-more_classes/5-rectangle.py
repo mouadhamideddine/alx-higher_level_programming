@@ -22,6 +22,9 @@ class Rectangle:
         """representation for internal use
         capable of creating a new object if eval"""
         return f"Rectangle({self.width}, {self.height})"
+    
+    def __del__(self):
+        print("Bye rectangle...")
 
     @property
     def width(self):
@@ -59,5 +62,3 @@ class Rectangle:
         if self.height == 0 or self.width == 0:
             return 0
         return (self.height + self.width) * 2
-
-
