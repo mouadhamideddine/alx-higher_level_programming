@@ -13,11 +13,14 @@ class Rectangle:
         self.height = height
 
     def __str__(self):
+        """user friendly representation"""
         if self.height == 0 or self.width == 0:
             return ""
         return ("#" * self.width + "\n") * (self.height - 1) + "#" * self.width
 
     def __repr__(self):
+        """representation for internal use
+        capable of creating a new object if eval"""
         return f"Rectangle({self.width}, {self.height})"
 
     @property
