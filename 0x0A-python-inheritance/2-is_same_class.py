@@ -3,9 +3,11 @@
 
 
 def is_same_class(obj, a_class):
-    """ is same class function 
-    @obj : object 
+    """ is same class function
+    @obj : object
     @a_class : class to check if object is instance
     return : BOOLEAN
     """
-    return (isinstance(obj, a_class))
+    if type(obj) is a_class:
+        return True
+    return False
