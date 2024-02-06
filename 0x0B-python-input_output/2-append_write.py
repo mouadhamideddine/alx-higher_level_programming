@@ -10,6 +10,6 @@ def append_write(filename="", text=""):
     """
     if not filename:
         return
-    with open(filename, 'w', encoding='utf8') as f:
+    with open(filename, 'a', encoding='utf8') as f:
         chars_written = f.write(text)
     return chars_written
