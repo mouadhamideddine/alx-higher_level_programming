@@ -5,6 +5,8 @@ read file module
 
 
 def read_file(filename=""):
+    if not filename:
+        return
     with open(filename, 'r', encoding='utf8') as openfile:
         file_content = openfile.read()
         print(file_content)
