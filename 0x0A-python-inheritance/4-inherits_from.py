@@ -7,4 +7,4 @@ def inherits_from(obj, a_class):
     inherited (directly or indirectly)
     check
     """
-    return isinstance(obj, a_class)
+    return isinstance(obj, a_class) or issubclass(a_class, obj)
