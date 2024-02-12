@@ -102,12 +102,6 @@ class TestRectangle(unittest.TestCase):
     def test_area(self):
         """test area"""
         self.assertEqual(self.rectangle.area(), 20)
-    
-    def test_display(self):
-        "test display"
-    
-
-
 
 
 if __name__ == '__main__':
