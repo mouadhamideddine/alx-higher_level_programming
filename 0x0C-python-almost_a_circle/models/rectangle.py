@@ -75,4 +75,5 @@ class Rectangle(Base):
         print(rows * self.height, end="")
     
     def __str__(self):
-        return f"[rectangle] {self.id} {self.x, self.y} - {self.width}/{self.height}"
+        """override str method"""
+        return f"[Rectangle] {self.id} {self.x, self.y} - {self.width}/{self.height}"
