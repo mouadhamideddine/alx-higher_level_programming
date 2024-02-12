@@ -74,7 +74,7 @@ class Rectangle(Base):
         x_plane = " " * self.x
         y_plane = "\n" * self.y
         rows = x_plane + ("#" * self.width) + "\n"
-        print(y_plane)
+        print(y_plane, end="")
         print(rows * self.height, end="")
     
     def __str__(self):
