@@ -14,7 +14,8 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-
+    
+    @staticmethod
     def to_json_string(list_dictionaries):
         "json repr dict"
         if not list_dictionaries or len(list_dictionaries) == 0:
