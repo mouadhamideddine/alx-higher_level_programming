@@ -8,12 +8,12 @@ class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
         """init square"""
         super().__init__(size, size, x, y, id)
-    
+
     @property
     def size(self):
         """size getter"""
         return self.width
-    
+
     @size.setter
     def size(self, value):
         """size setter"""
@@ -25,7 +25,7 @@ class Square(Rectangle):
         return "[{}] ({}) {}/{} - {}".format(type(self).__name__,
                                              self.id, self.x, self.y,
                                              self.width)
-    
+
     def update(self, *args, **kwargs):
         """updates attributes based
           on positional arguments"""
@@ -47,7 +47,7 @@ class Square(Rectangle):
             self.x = kwargs["x"]
         if "y" in kwargs:
             self.y = kwargs["y"]
-    
+
     def to_dictionary(self):
         """diict repres"""
         return {'x': self.x,
