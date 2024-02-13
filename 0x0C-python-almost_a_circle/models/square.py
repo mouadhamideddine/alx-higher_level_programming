@@ -25,3 +25,25 @@ class Square(Rectangle):
         return "[{}] ({}) {}/{} - {}".format(type(self).__name__,
                                              self.id, self.x, self.y,
                                              self.width)
+    
+    def update(self, *args, **kwargs):
+        """updates attributes based
+          on positional arguments"""
+        if args and len(args) > 0:
+            if len(args) > 0:
+                self.id = args[0]
+            if len(args) > 1:
+                self.size = args[1]
+            if len(args) > 2:
+                self.x = args[2]
+            if len(args) > 3:
+                self.y = args[3]
+            return
+        if "id" in kwargs:
+            self.id = kwargs["id"]
+        if "size" in kwargs:
+            self.size = kwargs["size"]
+        if "x" in kwargs:
+            self.x = kwargs["x"]
+        if "y" in kwargs:
+            self.y = kwargs["y"]
