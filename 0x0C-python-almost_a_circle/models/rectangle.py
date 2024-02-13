@@ -2,6 +2,7 @@
 """Rectangle Module"""
 from models.base import Base
 
+
 class Rectangle(Base):
     """Rectangle Class"""
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -10,26 +11,29 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-    
+
     @property
     def width(self):
         """width getter"""
         return self.__width
+
     @property
     def height(self):
         """height getter"""
         return self.__height
+
     @property
     def x(self):
         """x getter"""
         return self.__x
+
     @property
     def y(self):
         """y getter"""
         return self.__y
-    
+
     @width.setter
-    def width (self, value):
+    def width(self, value):
         """width.setter"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -45,7 +49,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-    
+
     @x.setter
     def x(self, value):
         """x.setter"""
@@ -54,7 +58,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
-    
+
     @y.setter
     def y(self, value):
         """y.setter"""
@@ -67,7 +71,7 @@ class Rectangle(Base):
     def area(self):
         """rectangle area"""
         return self.width * self.height
-    
+
     def display(self):
         """prints in stdout the Rectangle
         instance with the character #"""
@@ -76,10 +80,13 @@ class Rectangle(Base):
         rows = x_plane + ("#" * self.width) + "\n"
         print(y_plane, end="")
         print(rows * self.height, end="")
-    
+
     def __str__(self):
         """override str method"""
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        return (
+            f"[Rectangle] ({self.id}) {self.x}/{self.y} - "
+            f"{self.width}/{self.height}"
+        )
     
     def update(self, *args, **kwargs):
         """updates attributes based on positional arguments"""
