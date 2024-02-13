@@ -29,6 +29,10 @@ class Base:
         filename = ""
         for element in list_objs:
             json_ready.append(element.to_dictionary())
-        filename = f"{list_objs[0].__class__.__name__}.json"
+        try:
+            filename = f"{list_objs[0].__class__.__name__}.json"
+        except:
+            filename = f"{list_objs.__class__.__name__}.json"
+
         with open(filename, "w") as json_file:
             json_file.write(cls.to_json_string(json_ready))
