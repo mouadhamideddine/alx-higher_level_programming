@@ -87,7 +87,7 @@ class Rectangle(Base):
             f"[Rectangle] ({self.id}) {self.x}/{self.y} - "
             f"{self.width}/{self.height}"
         )
-    
+
     def update(self, *args, **kwargs):
         """updates attributes based on positional arguments"""
         if args and len(args) > 0:
@@ -111,6 +111,4 @@ class Rectangle(Base):
         if "x" in kwargs:
             self.x = kwargs["x"]
         if "y" in kwargs:
-            self.y = kwargs["y"]        
-
-        
+            self.y = kwargs["y"]
